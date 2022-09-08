@@ -10,7 +10,16 @@
     <link rel="stylesheet" href="./style.css">
     <title>ErinLinks</title>
   </head>
-  <body class="dark-blue">
+  <body onclick="closeMenu()">
+    <div class="open-menu">
+      <p class="menu" onmouseover="openMenu()" onclick="closeMenu()">Menu</p>
+      <ul class="menu-closed">
+        <li class="menu-item" onClick="blue()">Azul Claro(padrão)</li>
+        <li class="menu-item" onClick="darkBlue()">Azul Escuro</li>
+        <li class="menu-item" onClick="pink()">Rosa Claro</li>
+        <li class="menu-item" onClick="darkPink()">Rosa Escuro</li>
+      </ul>
+    </div>
     <div class="container">
       <img class="avatar" src="https://github.com/erisenrholanda.png" alt="Imagem do Erisen" />
       <h1>Erisen Reis</h1>
@@ -24,7 +33,8 @@
       </ul>
       
       <footer>
-        Feito com 🖤 por <a href="https://github.com/erisenrholanda" target="_blank">Erisen</a>
+        Feito com 🖤 por <a href="https://github.com/erisenrholanda" target="_blank">Erisen Holanda</a>
+        <script src="script.js"></script>
       </footer>
     </div>
   </body>

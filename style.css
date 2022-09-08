@@ -39,6 +39,59 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+  transition: all 0.5s
+}
+
+div.open-menu {
+  width: 70px;
+  left: 15px;
+  top: 5px;
+  position: absolute;
+}
+
+p.menu {
+  padding: 5px;
+  margin: 2px;
+
+  border-radius: 5%;
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+  background: var(--primary-color);
+
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.menu-closed {
+  position: absolute;
+  display:none
+}
+
+.open {
+  position: absolute;
+  left: 15px;
+}
+
+li.menu-item {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 5px;
+
+  border-radius: 5%;
+  border: 2px solid var(--primary-color);
+  color: var(--text-color);
+  background: var(--primary-color);
+
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: all 1s;
 }
 
 .container {
